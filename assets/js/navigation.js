@@ -10,11 +10,9 @@ class SiteNav extends HTMLElement {
     // the numeral, active-page highlighting, and mobile menu toggle are all handled automatically.
     const navItems = [
       { href: "/index.html", num: "I.", label: "Home" },
-      { href: "/pages/about.html", num: "II.", label: "About" },
-      { href: "/pages/research.html", num: "III.", label: "Research" },
-      { href: "/pages/writing.html", num: "IV.", label: "Writing" },
+      { href: "/pages/about.html", num: "II.", label: "About/Contact" },
+      { href: "/pages/research.html", num: "III.", label: "Research/Writing" },
       { href: "/pages/cv.html", num: "V.", label: "C.V." },
-      { href: "/pages/contact.html", num: "VI.", label: "Contact" },
     ];
 
     const navLinks = navItems

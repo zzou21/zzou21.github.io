@@ -34,6 +34,10 @@ body {
 
 a { color: inherit; }
 
+.name{
+  font-size: 27px;
+}
+
 /* background coordinate grid */
 .grid-field {
   position: fixed;
@@ -112,7 +116,7 @@ a { color: inherit; }
   z-index: 1;
   max-width: var(--max-w);
   margin: 0 auto;
-  padding: 64px 24px 72px;
+  padding: 24px 14px 22px;
   text-align: center;
   transform-origin: center 40%;
 }
@@ -239,7 +243,8 @@ main {
 /* research territories */
 .territory-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  /* uncomment the one below if I want to set multple boxes in the grid */
+  /* grid-template-columns: repeat(3, 1fr); */ 
   gap: 1px;
   background: var(--line-faint);
   border: 1px solid var(--line-faint);

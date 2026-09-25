@@ -7,16 +7,15 @@
    defaults (mostly invisible/black text). */
 
 .side-nav {
-  position: sticky;
-  top: 96px;
-  align-self: start;
+  position: fixed;
+  top: 196px;
 
   width: 100%;
   max-width: 220px;
-  max-height: calc(100vh - 140px);
+  max-height: calc(100vh - 180px);
   overflow-y: auto;
 
-  padding: 0 0 0 18px;
+  padding: 40px 0 0 18px;
   border-left: 1px solid var(--line-faint);
 
   font-family: var(--font-mono);
