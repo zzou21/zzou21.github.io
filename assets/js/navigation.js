@@ -12,8 +12,8 @@ class SiteNav extends HTMLElement {
       { href: "/index.html", num: "I.", label: "Home" },
       { href: "/pages/about.html", num: "II.", label: "About/Contact" },
       { href: "/pages/pubPres.html", num: "III.", label: "Publication/Presentation" },
-      { href: "/pages/digitalHumanities.html", num: "III.", label: "Digital Humanities Research" },
-      { href: "/pages/cv.html", num: "IV.", label: "C.V." },
+      { href: "/pages/digitalHumanities.html", num: "IV.", label: "Digital Humanities Research" },
+      { href: "/pages/cv.html", num: "V.", label: "C.V." },
     ];
 
     const navLinks = navItems
