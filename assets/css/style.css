@@ -10,15 +10,13 @@
 
   --width: 680px;
 
-  /* aliases used by styleForSideNavigationBar.css */
-  --paper: var(--bg);
+  /* names used by styleForSideNavigationBar.css */
   --ink: var(--text);
   --ink-soft: var(--text-soft);
   --accent: var(--text);
   --line-faint: #eeeeee;
-  --moss: var(--text-soft);
-  --font-display: var(--font-body);
-  --font-mono: ui-monospace, Menlo, Consolas, monospace;
+  --font-mono: var(--font-ui);
+
 }
 
 *,
@@ -101,8 +99,32 @@ h2 { font-size: 1.25rem; margin: 40px 0 12px; }
 h3 { font-size: 1.05rem; margin: 32px 0 8px; }
 
 p {
-  margin: 0 0 13px;
-  font-size: 14px;
+  font-size: 18px;
+  margin-bottom:  2px;
+}
+
+.projectdate {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.smallnote {
+  font-size: 15px;
+  margin: 0;
+}
+
+.externallink {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+ol {
+  margin: 0;
+}
+
+li {
+  font-size: 17px;
+  margin: 0;
 }
 
 hr {
