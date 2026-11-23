@@ -1,3 +1,3 @@
-## Zhihui Zou's personal website
+# Zhihui Zou's personal website
 
-Using just HTML, CSS, and JavaScript
+This is the code for my personal website. See my personal website at [zzou21.github.io](zzou21.github.io)
