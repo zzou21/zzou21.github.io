@@ -7,12 +7,13 @@
    defaults (mostly invisible/black text). */
 
 .side-nav {
+  --top: 196px;
   position: fixed;
-  top: 196px;
+  top: var(--top);
 
   width: 100%;
   max-width: 220px;
-  max-height: calc(100vh - 180px);
+  max-height: calc(100vh - var(--top) - 24px);
   overflow-y: auto;
 
   padding: 40px 0 0 18px;
@@ -88,7 +89,7 @@
 /* below this width the layout stops being a side-by-side grid,
    so the sticky TOC is hidden rather than fighting for space;
    headings remain valid anchor targets on their own. */
-@media (max-width: 960px) {
+@media (max-width: 600px) {
   .side-nav {
     display: none;
   }

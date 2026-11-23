@@ -99,17 +99,17 @@ h2 { font-size: 1.25rem; margin: 40px 0 12px; }
 h3 { font-size: 1.05rem; margin: 32px 0 8px; }
 
 p {
-  font-size: 18px;
+  font-size: 1rem;
   margin-bottom:  2px;
 }
 
 .projectdate {
-  font-size: 16px;
+  font-size: 0.8rem;
   margin-bottom: 20px;
 }
 
 .smallnote {
-  font-size: 15px;
+  font-size: 0.7rem;
   margin: 0;
 }
 
@@ -123,7 +123,7 @@ ol {
 }
 
 li {
-  font-size: 17px;
+  font-size: 0.9rem;
   margin: 0;
 }
 
@@ -141,24 +141,34 @@ summary {
 }
 
 hr {
-  width: 100px;
+  width: min(400px, 100%);
   margin-top: 20px;
   margin-bottom: 4px;
 }
 
 /* ---------- small screens ---------- */
 
-@media (max-width: 600px) {
+@media (max-width: 500px) {
   body { font-size: 17px; }
   .site-header { padding-top: 40px; }
   .site-name { font-size: 1.6rem; }
 }
 
+@media (min-width: 1001px) {
+  body:has(page-sidebar) .site-header,
+  body:has(page-sidebar) main {
+    max-width: min(var(--width), calc(100vw - 480px));
+  }
+}
+
+
+/* zoom in on images when clicked on */
 .css-zoom input { display: none; }
 .css-zoom img {
   width: 300px;
   cursor: zoom-in;
   transition: transform 0.25s ease;
+  max-width: 100%;
 }
 .css-zoom input:checked + img {
   transform: scale(1.8);
