@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">  
 <title>DH Research</title>
 <link rel="stylesheet" href="/assets/css/style.css">
 </head>
@@ -22,7 +23,7 @@
   
   <h2 id="technicalbackground">My DH Background</h2>
   <p>For my DH work, I currently focus on Natural Language Processing (esp. named entity recognition) and open-source software development. I have working experience with UI/UX development, database engineering, web development, educational technology infrastructure development, and others. See my CV for detailed technical experience</p>
-  <p>Below are some of my DH projects:</p>
+  <p>Below are some of my DH projects. Use the side navigation menu bar to skip to specific projects.</p>
 
   <hr>
 
@@ -37,35 +38,82 @@
   </p>
 
   <img src="/assets/files/oilResearch/LAOilGif18901930.gif" style="width:600px; height:300px;">
-  <p class="smallnote"><i>n=15064</i> newspaper articles between 1890-1930</p>
+  <p class="smallnote"><i>n=15064</i>. Newspaper articles covering the LA oil industry between 1890-1930.</p>
 
   <p class="externallink"><a href="https://github.com/zzou21/LAOil" target="_blank" rel="noopener noreferrer">Code for this project</a></p>
+
+  <p>This project has resulted in multiple conference presentations and is supported by multiple fellowships. See my <a href="/pages/pubPres.html" target="_blank" rel="noopener noreferrer">Publications</a> page and <a href="/pages/cv.html" target="_blank" rel="noopener noreferrer">CV</a> page for details.</p>
 
   <hr>
 
   <h2 id="astext">AsteXT: Asian American Literature</h2>
+  <p class="projectdate">2023 - now</p>
+  <p class="externallink"><a href="https://astext.oit.duke.edu/" target="_blank" rel="noopener noreferrer"> AsteXT Project Website (astext.oit.duke.edu)</a>.</p>
+
+  <p>I started the AsteXT project to study how the writing and language in Asian American short stories changed over time and to what extent, if quantitatively detectable, did these changes reflect major turning points Asian American history. This project has many goals: one is to create a publicly available semantic-search-enabled database of Asian American short stories between 1974 and 2024. The goal to pursue semantic search is to allow more users (especially students, secondary school teachers, artists, community members, artists, etc.) to more easily find Asian American short stories. Existing database structures requires the user to know at least the story title, author, publication year, and journal, which are information that only users previosuly familiar with the discipline know. Having semantic search allows users who are not familiar with the discipline of Asian American literature to still find short stories that they want for learning, teaching, or even personal enjoyment. To the best of my knowledge, this project creates the first public database focusing specifically on Asian American <i>short stories</i>.</p>
+
+  <p>Another goal is to answer specific research questions. One question is how did Asian American short stories perceive the idea of "space" in their literature. To do so, we focus on identifying non-named entities. For example, instead of finding simply the names of cities mentioned in a story, we also hope to identify just the word "city" as another component of a story's overall spatial construction. To answer this question, this project manually annotates short stories to train a domain-specific non-generative language model to detect more non-named entities at scale. Named Entity Recognition has been a field of research for many years, but few researchers have engaged with non-named entity recognition. Our work hopes to fill that gap.</p>
+    <ol>
+      <li>Built a publicly available relational database using a custom metadata structure by expanding what metadata a traditional archive might include, such as using spaces that the story is set in as another metadata.</li>
+      <li>Collected over 550 Asian American short stories and performed Named Entity Recognition on them to find the spatial metadata.</li>
+      <li>Built a customized data annotation tool to prepare data to train a domain-specific non-generative language models to identify non-space entities in future Asian American short stories.</li>
+      <li>Built a BERT fine-tune workflow to fine-tune various BERT models into domain-specific spatial non-named entity recognition machines.</li>
+      <li>Taught a year-long DH research tutorial seminar. See <a href="/pages/teaching.html" target="_blank" rel="noopener noreferrer">Teaching</a> page for details.</li>
+    </ol>
+  </p>
+
+  <p>I am the Principal Investigator for the AsteXT team along with my collaborator, <a href="https://directory.library.duke.edu/staff/matthew.hayes" target="_blank" rel="noopener noreferrer">Dr. Matthew Hayes</a>. This team consists of over 15 members, ranging from faculty, staff, undergraduate students, and PhD students at Duke University. This is funded by multiple grants and financial supports. Primarily, it was funded by Duke University Bass Connections, Data+, and Code+ project grants, of which I was the first student to be awarded these grants, as they were historically reserved only for faculty or departments to run research teams. Other sponsors included Duke University Trinity College Deans' office, Duke University URS Office, and Duke University Asian/Pacific Studies Institute. In Summer 2025, funding that this team received created 9 full-time undergraduate DH research positions and 1 part-time PhD student DH research position.</p>
+
+  <details>
+    <summary>AsteXT in-house annotation tool</summary>
+    <img src="/assets/files/AsteXT/AsteXTAnnotationTool.png" style="width:700px;height:400px;">
+  </details>
+
+  <details>
+    <summary>AsteXT semantic search database</summary>
+    <img src="/assets/files/AsteXT/AsteXTDatabaseSearch.png" style="width:700px;height:400px;">
+  </details>
+
+  <p>This project has resulted in multiple conference presentations and one forthcoming paper in <i>Programming Historians</i>. See my <a href="/pages/pubPres.html" target="_blank" rel="noopener noreferrer">Publications</a> page for details.</p>
 
   <hr>
 
   <h2 id="basictools">Basic Tools</h2>
   <p class="projectdate">2025 - now</p>
 
+  <p>Using Electron, JavaScript, HTML, and CSS, I built an open-source desktop application called <i>Basic Tools</i> that peforms <i>basic</i> daily computer needs in our professional, work, research, family, or personal digital lives. Many of these tools are ones that I think major OS providers should have already provided in an easy-to-use manner but have not. Some of them include: quick bulk image format converter, quick bulk image renamer, quick bulk PDf merger, etc. The main difference with this app is that it stays completely locally to your device and does not require user account creation. This means that your document stays completely offline and only on your device, away from user account breaches, AI bots, unsecure free online tools, other potentially malicious actors online, or heavily expensive proprietary softwares like Adobe.</p>
+
+  <p>Download the app at <i>Basic Tools</i>'s website <a href="https://zzou21.github.io/BasicToolsWeb/" target="_blank" rel="noopener noreferrer">here</a>. The app supports both Windows and MacBook.</p>
+
+  <p>This project was supported by the Duke University Co-Lab Development Grant.</p>
+
   <hr>
 
-  <h2 id="ecbc">"Ethical Consumption Before Capitalism"</h2>
+  <h2 id="ecbc">"Ethical Consumption Before Capitalism" Team</h2>
+  <p class="projectdate">2024 - 2025</p>
 
-  <hr>
+  <p>On Dr. Astrid Giugni (Duke University)'s "Ethical Consumption Before Capitalism" DH research team, I worked with digitized Virginia Company of London (1606-1624) documents and the Early English Books Online (EEBO) database to understand the linguistic choices used in these documents when describing Colonial Virginia. I performed network analysis on more than 300 publications in EEBO to see similar (and different) terms used by various early modern authors in England.</p>
+  <p>I also performed Named Entity Recognition and OCR to understand the different locations mentioned in the archives of the Virginia Company of London.</p>
 
-  <h2 id="mission2000">Mission 2000 Database</h2>
+  <p>Examples of my work on the team:</p>
+  <details>
+    <summary>Network analysis on four EEBO authors</summary>
+    <label class="css-zoom">
+      <input type="checkbox">
+      <img src="/assets/files/ethicalConsumptionTeam/ECBCNetworkGraph4Authors.png" style="width:700px;height:400px;">
+    </label>
+  </details>
 
   <hr>
   
-  <h2 id="sandcastle">Sandcastle</h2>
+  <h2 id="sandcastle">"Sandcastle" Team</h2>
+
+  <hr>
+  <h2 id="mission2000">Mission 2000 Database</h2>
+
   
   
 </main>
-
-
 
 </body>
 </html>

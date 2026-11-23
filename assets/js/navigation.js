@@ -12,6 +12,7 @@ class SiteNav extends HTMLElement {
       { href: "/index.html", label: "Home" },
       { href: "/pages/about.html", label: "About/Contact" },
       { href: "/pages/pubPres.html", label: "Publication/Presentation" },
+      { href: "/pages/teaching.html", label: "Teaching" },
       { href: "/pages/digitalHumanities.html", label: "Digital Humanities Research" },
       { href: "/pages/cv.html", label: "C.V." },
     ];

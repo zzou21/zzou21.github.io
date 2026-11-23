@@ -8,7 +8,7 @@
   --font-body: Georgia, "Times New Roman", serif;
   --font-ui: system-ui, -apple-system, "Segoe UI", sans-serif;
 
-  --width: 680px;
+  --width: 800px;
 
   /* names used by styleForSideNavigationBar.css */
   --ink: var(--text);
@@ -41,7 +41,7 @@ body {
 .site-header {
   max-width: var(--width);
   margin: 0 auto;
-  padding: 64px 24px 24px;
+  padding: 64px 10px 10px;
   border-bottom: 1px solid var(--line);
 }
 
@@ -84,7 +84,7 @@ body {
 main {
   max-width: var(--width);
   margin: 0 auto;
-  padding: 40px 24px 80px;
+  padding: 40px 10px 10px;
 }
 
 h1,
@@ -127,8 +127,23 @@ li {
   margin: 0;
 }
 
+details {
+  border: 1px solid;
+  border-radius: 4px;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+  margin-top: 4px;
+  margin-bottom:4px;
+}
+
+summary {
+  font-weight: bold
+}
+
 hr {
   width: 100px;
+  margin-top: 20px;
+  margin-bottom: 4px;
 }
 
 /* ---------- small screens ---------- */
@@ -137,4 +152,17 @@ hr {
   body { font-size: 17px; }
   .site-header { padding-top: 40px; }
   .site-name { font-size: 1.6rem; }
+}
+
+.css-zoom input { display: none; }
+.css-zoom img {
+  width: 300px;
+  cursor: zoom-in;
+  transition: transform 0.25s ease;
+}
+.css-zoom input:checked + img {
+  transform: scale(1.8);
+  cursor: zoom-out;
+  position: relative;
+  z-index: 10;
 }
