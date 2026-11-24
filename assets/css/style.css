@@ -118,7 +118,7 @@ p {
   margin-bottom: 4px;
 }
 
-ol {
+ol, ul {
   margin: 0;
 }
 
@@ -176,3 +176,5 @@ hr {
   position: relative;
   z-index: 10;
 }
+
+
