@@ -152,22 +152,8 @@ hr {
   margin-bottom: 4px;
 }
 
-button.cursorpointer{
+button {
   cursor: pointer;
-}
-/* ---------- small screens ---------- */
-
-@media (max-width: 500px) {
-  body { font-size: 17px; }
-  .site-header { padding-top: 40px; }
-  .site-name { font-size: 1.6rem; }
-}
-
-@media (min-width: 1001px) {
-  body:has(page-sidebar) .site-header,
-  body:has(page-sidebar) main {
-    max-width: min(var(--width), calc(100vw - 480px));
-  }
 }
 
 
@@ -187,3 +173,17 @@ button.cursorpointer{
 }
 
 
+/* ---------- small screens ---------- */
+
+@media (max-width: 500px) {
+  body { font-size: 17px; }
+  .site-header { padding-top: 40px; }
+  .site-name { font-size: 1.6rem; }
+}
+
+@media (min-width: 1001px) {
+  body:has(page-sidebar) .site-header,
+  body:has(page-sidebar) main {
+    max-width: min(var(--width), calc(100vw - 480px));
+  }
+}

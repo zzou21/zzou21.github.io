@@ -89,7 +89,7 @@
 /* below this width the layout stops being a side-by-side grid,
    so the sticky TOC is hidden rather than fighting for space;
    headings remain valid anchor targets on their own. */
-@media (max-width: 600px) {
+@media (max-width: 1000px) {
   .side-nav {
     display: none;
   }
