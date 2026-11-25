@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>About</title>
 <link rel="stylesheet" href="/assets/css/style.css">
+<script src="/assets/js/clickToCopy.js"></script
 </head>
 <body>
 
@@ -14,14 +15,14 @@
   <script src="/assets/js/navigation.js"></script>
 </site-nav>
 
+
 <main>
 
   <h1>About Me</h1>
 
   <p>I'm Zhihui Zou, and I'm a student at Duke University studying History, Computational Media, and Information Science & Studies. I'm interested in combining technological methodologies with the humanities and social sciences.</p>
   
-  <p>Reach me at: <i>zou.z.zhihui@gmail.com</i></p>
-
+  <p>Reach me at: <i><span id="textToCopyOnClick">zou.z.zhihui@gmail.com</span></i> <button onclick="clickToCopy(this, 'Copy email')" class="cursorpointer">Copy email</button></p> 
   <hr>
 
   <p>Some personal interests / fun facts:</p>
@@ -29,6 +30,7 @@
     <ol>
       <li>I have been playing contract bridge since 6th grade. I used to play <i>go</i>.</li>
       <li>For a while in the past, I went by the first name "Jerry."</li>
+      <li>I was a news field photographer for my undergrad's newspaper. This experience developed some of my photography and photo editing skills, although I don't use these skills as much today.</li>
     </ol>
   </p>
 

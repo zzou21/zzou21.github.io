@@ -135,9 +135,15 @@ details {
   margin-top: 4px;
   margin-bottom:4px;
 }
+details:hover{
+  background-color: #e8e8e8
+}
 
 summary {
   font-weight: bold
+}
+summary:hover {
+  cursor: pointer;
 }
 
 hr {
@@ -146,6 +152,9 @@ hr {
   margin-bottom: 4px;
 }
 
+button.cursorpointer{
+  cursor: pointer;
+}
 /* ---------- small screens ---------- */
 
 @media (max-width: 500px) {
