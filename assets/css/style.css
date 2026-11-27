@@ -4,6 +4,7 @@
   --text: #111111;
   --text-soft: #666666;
   --line: #dddddd;
+  --hover-bg: #e8e8e8;
 
   --font-body: Georgia, "Times New Roman", serif;
   --font-ui: system-ui, -apple-system, "Segoe UI", sans-serif;
@@ -79,6 +80,96 @@ body {
   border-bottom-color: var(--text);
 }
 
+/* ---------- dropdown menu ---------- */
+
+.dropdown {
+  position: relative;
+}
+
+/* the button looks like the other menu links */
+.dropdown-toggle {
+  font: inherit;
+  color: var(--text-soft);
+  background: none;
+  border: none;
+  border-bottom: 1px solid transparent;
+  padding: 0 0 2px;
+}
+
+.dropdown-toggle:hover,
+.dropdown-toggle:focus-visible,
+.dropdown.is-open .dropdown-toggle {
+  color: var(--text);
+}
+
+.dropdown-toggle.is-current {
+  color: var(--text);
+  border-bottom-color: var(--text);
+}
+
+/* the list of links: hidden until opened, boxed like <details> */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  margin-top: 8px;
+  min-width: 200px;
+  /* padding: 4px 0; */
+  background: var(--bg);
+  border: 1px solid;
+  /* border-radius: 4px; */
+  z-index: 20;
+}
+
+.dropdown.is-open .dropdown-menu {
+  display: block;
+}
+
+/* the last dropdown in the menu opens toward the left so it stays on screen */
+.dropdown:last-child .dropdown-menu {
+  left: auto;
+  right: 0;
+}
+
+.dropdown-menu a {
+  display: block;
+  padding: 4px 0.75em;
+  border-bottom: none;
+  white-space: nowrap;
+}
+
+.dropdown-menu a:hover,
+.dropdown-menu a:focus-visible {
+  background: var(--hover-bg);
+}
+
+/* inside the dropdown, mark the current page with bold text instead of an underline */
+.dropdown-menu a.is-current {
+  font-weight: bold;
+}
+
+/* on devices with a mouse, also open the dropdown on hover */
+@media (hover: hover) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+
+  .dropdown:hover .dropdown-toggle {
+    color: var(--text);
+  }
+}
+
+/* invisible bridge across the gap between the button and the menu */
+.dropdown-menu::before {
+  content: "";
+  position: absolute;
+  top: -9px;
+  left: 0;
+  right: 0;
+  height: 9px;
+}
+
 /* ---------- page content ---------- */
 
 main {
@@ -118,6 +209,12 @@ p {
   margin-bottom: 4px;
 }
 
+.photocaption{
+  font-size: 0.9rem;
+  font-weight: bold;
+  font-family: 'Open Sans';
+}
+
 ol, ul {
   margin: 0;
 }
@@ -136,7 +233,7 @@ details {
   margin-bottom:4px;
 }
 details:hover{
-  background-color: #e8e8e8
+  background-color: var(--hover-bg);
 }
 
 summary {
@@ -149,7 +246,7 @@ summary:hover {
 hr {
   width: min(400px, 100%);
   margin-top: 20px;
-  margin-bottom: 4px;
+  margin-bottom: 15px;
 }
 
 button {
