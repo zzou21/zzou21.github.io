@@ -20,7 +20,7 @@ class SiteNav extends HTMLElement {
         label: "Personal",
         children: [
           { href: "/pages/personals/photography.html", label: "Photography" },
-          // { href: "/pages/photography.html", label: "Something" },
+          { href: "/pages/personals/semiSeriousProjects.html", label: "Semi-Serious Projects" },
         ],
       },
     ];
@@ -76,7 +76,7 @@ class SiteNav extends HTMLElement {
       }
     });
 
-    // ---------- dropdown open/close ----------
+    // dropdown:
 
     const dropdowns = this.querySelectorAll(".dropdown");
 
