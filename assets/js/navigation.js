@@ -9,7 +9,7 @@ class SiteNav extends HTMLElement {
     // To add a page, add a line here. The current page is highlighted automatically.
     // To make a dropdown, give an item a label and a "children" list instead of an href.
     const navItems = [
-      { href: "/index.html", label: "Home" },
+      { href: "/", label: "Home" },
       { href: "/pages/about.html", label: "About/Contact" },
       // { href: "/pages/pubPres.html", label: "Publication/Presentation" },
       { href: "/pages/teaching.html", label: "Teaching" },
@@ -49,7 +49,7 @@ class SiteNav extends HTMLElement {
 
     this.innerHTML = `
       <header class="site-header">
-        <a class="site-name" href="/index.html">Zhihui Zou</a>
+        <a class="site-name" href="/">Zhihui Zou</a>
         <nav class="site-menu" aria-label="Primary navigation">
           ${navLinks}
         </nav>
